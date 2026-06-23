@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# ARATA Executive Dashboard
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Deskripsi Aplikasi
 
-## Get started
+ARATA Executive Dashboard adalah aplikasi mobile berbasis React Native yang digunakan untuk memantau kinerja pekerja las (welder). Aplikasi memanfaatkan Axios untuk mengambil data dari API dan Firebase untuk autentikasi pengguna serta penyimpanan laporan ke database cloud.
 
-1. Install dependencies
+## Anggota Kelompok dan Pembagian Tugas
 
-   ```bash
-   npm install
-   ```
+1. MOHAMAD ABRIANSAH 0923040061 (Backend, State & Firebase Specialist)
+2. FAJAR RAHMAT SETIAWAN 0923040073 (Frontend & Axios Specialist)
 
-2. Start the app
+## Teknologi yang Digunakan
 
-   ```bash
-   npx expo start
-   ```
+* React Native
+* Expo
+* Axios
+* Firebase Authentication
+* Firebase Firestore
 
-In the output, you'll find options to open the app in a
+## API yang Digunakan
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### JSONPlaceholder API
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Endpoint:
 
-## Get a fresh project
+https://jsonplaceholder.typicode.com/users
 
-When you're ready, run:
+Fungsi:
+Mengambil data pengguna yang kemudian diolah menjadi data pekerja pada dashboard.
 
-```bash
-npm run reset-project
-```
+## Fitur Utama
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 1. Login Authentication
 
-## Learn more
+* Login menggunakan Firebase Authentication.
+* Hanya pengguna yang terdaftar yang dapat mengakses aplikasi.
 
-To learn more about developing your project with Expo, look at the following resources:
+### 2. Sinkronisasi Data
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* Mengambil data menggunakan Axios dari API.
+* Menampilkan data pekerja pada dashboard.
 
-## Join the community
+### 3. Arsip Laporan
 
-Join our community of developers creating universal apps.
+* Menyimpan laporan kinerja ke Firebase Firestore.
+* Data tersimpan secara cloud dan dapat diakses kembali.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Alur Sistem
+
+User Login → Firebase Authentication → Dashboard → Axios Request ke API → Data Ditampilkan → Simpan Laporan ke Firestore
