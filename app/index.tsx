@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert, ActivityIndicator, ScrollView } from 'react-native';
-import { auth, db } from '../firebaseConfig'; 
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import axios from 'axios';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
+import { ActivityIndicator, Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { auth, db } from '../firebaseConfig';
 
 export default function App() {
   const [email, setEmail] = useState('');
@@ -322,3 +322,7 @@ const styles = StyleSheet.create({
   title: { fontSize: 32, fontWeight: '900', color: '#fff', marginBottom: 8, letterSpacing: 1 },
   subtitle: { fontSize: 14, color: '#A0AEC0', marginBottom: 35, textTransform: 'uppercase', letterSpacing: 1 },
 });
+
+
+// npx expo start -c
+// C:\Users\Mohamad abriansah\arata-dashboard\a
