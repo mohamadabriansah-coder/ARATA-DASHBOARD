@@ -325,4 +325,4 @@ const styles = StyleSheet.create({
 
 
 // npx expo start -c
-// C:\Users\Mohamad abriansah\arata-dashboard\a
+// C:\Users\Mohamad abriansah\arata-dashboard\
